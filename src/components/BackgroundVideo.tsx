@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
 const SENSITIVITY = 1.8;
-const VIDEO_SRC =const VIDEO_SRC = '/hero-video.mp4';
+const VIDEO_SRC = '/hero-video.mp4';
 export default function BackgroundVideo() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const prevXRef = useRef<number | null>(null);
