@@ -19,7 +19,7 @@ export default function Navbar() {
             className="select-none text-[25px] text-black sm:text-[30px]"
             style={{ letterSpacing: '-0.02em' }}
           >
-            ✳︎
+            θ
           </span>
         </div>
 
