@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 
 const SENSITIVITY = 1.8;
 const VIDEO_SRC = '/hero-video.mp4';
+
 export default function BackgroundVideo() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const prevXRef = useRef<number | null>(null);
@@ -103,13 +104,15 @@ export default function BackgroundVideo() {
   }, []);
 
   return (
-    <video
-      ref={videoRef}
-      className="fixed inset-0 z-0 h-full w-full object-cover object-[center_center] sm:object-[70%_center]"
-      src={VIDEO_SRC}
-      muted
-      playsInline
-      preload="auto"
-    />
+    <div className="fixed inset-0 z-0 bg-white">
+      <video
+        ref={videoRef}
+        className="h-full w-full object-contain object-center sm:object-cover sm:object-[70%_center]"
+        src={VIDEO_SRC}
+        muted
+        playsInline
+        preload="auto"
+      />
+    </div>
   );
 }

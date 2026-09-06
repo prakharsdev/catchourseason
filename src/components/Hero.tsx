@@ -26,7 +26,7 @@ function CopyIcon() {
 
 export default function Hero() {
   const { displayed, done } = useTypewriter(
-    "Hey there, we're Prakhar & Ragni, the CatchOurSeason couple. \nGlad you stopped by, we create content around countries, \ncultures and food, turning every trip into \na seasonic story worth catching."
+    "Hey there, we're Prakhar & Ragni, the CatchOurSeason couple. \nGlad you stopped by, we create content around countries, \ncultures and food, turning every trip into \na seasonic story worth catching"
   );
   const [pillsVisible, setPillsVisible] = useState(false);
 
